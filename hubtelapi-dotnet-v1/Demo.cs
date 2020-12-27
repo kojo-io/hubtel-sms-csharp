@@ -7,14 +7,14 @@ namespace hubtelapi_dotnet_v1
     {
         private static void Main(string[] args)
         {
-            const string clientId = "clientId";
-            const string clientSecret = "clientSecret";
+            const string clientId = "mcjntyvj";
+            const string clientSecret = "csidlcvn";
 
 
             try {
                 var host = new ApiHost(new BasicAuth(clientId, clientSecret));
                 var messageApi = new MessagingApi(host);
-                MessageResponse msg = messageApi.SendQuickMessage("DevUniverse", "+233207110652", "Welcome to planet Hubtel!", true);
+                MessageResponse msg = messageApi.SendQuickMessage("BPCI", "+233274323816", "Welcome to BPCI HQ!", false);
                 Console.WriteLine(msg.Status);         
             }
             catch (Exception e) {
